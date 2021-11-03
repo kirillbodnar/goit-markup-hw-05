@@ -61,9 +61,10 @@
     </header>
     <!-- /* -------------------main-------------------------- */ -->
     <main>
+      
       <section class="hero-section overlay">
         <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="main-btn">Заказать услугу</button>
+        <button type="button" data-modal-open class="main-btn">Заказать услугу</button>
       </section>
       <section class="section1 section">
         <div class="container">
@@ -444,6 +445,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" data-modal-close class="modal-btn">
+                    <svg class="modal-close">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
