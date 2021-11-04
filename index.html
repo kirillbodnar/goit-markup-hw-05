@@ -28,10 +28,12 @@
             </a>
             <ul class="list nav-list">
               <li class="item hover-animation">
-                <a href="index.html" class="link main-link">Студия</a>
+                <a href="index.html" class="link main-link current">Студия</a>
               </li>
               <li class="item">
-                <a href="portfolio.html" class="link main-link">Портфолио</a>
+                <a href="portfolio.html" class="link main-link "
+                  >Портфолио</a
+                >
               </li>
               <li class="item">
                 <a href="" class="link main-link">Контакты</a>
@@ -61,10 +63,11 @@
     </header>
     <!-- /* -------------------main-------------------------- */ -->
     <main>
-      
       <section class="hero-section overlay">
         <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" data-modal-open class="main-btn">Заказать услугу</button>
+        <button type="button" data-modal-open class="main-btn">
+          Заказать услугу
+        </button>
       </section>
       <section class="section1 section">
         <div class="container">
@@ -126,32 +129,26 @@
           <h2 class="section2-header">Чем мы занимаемся</h2>
           <ul class="list section2">
             <li class="item">
-                <img src="images/box1.jpg" alt="Верстка" width="370" />
-                <div class="about-us-box">
-                  <p class="about-us-text">
-                    Десктопные приложения
-                  </p>
-                </div>
+              <img src="images/box1.jpg" alt="Верстка" width="370" />
+              <div class="about-us-box">
+                <p class="about-us-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item">
-                <img
-                  src="images/box2.jpg"
-                  alt="Настройка веб сайта"
-                  width="370"
-                />
-                <div class="about-us-box">
-                  <p class="about-us-text">
-                    Мобильные приложения
-                  </p>
-                </div>
+              <img
+                src="images/box2.jpg"
+                alt="Настройка веб сайта"
+                width="370"
+              />
+              <div class="about-us-box">
+                <p class="about-us-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="item">
-                <img src="images/box3.jpg" alt="Дизайн" width="370" />
-                <div class="about-us-box">
-                  <p class="about-us-text">
-                    Дизайнерские решения
-                  </p>
-                </div>
+              <img src="images/box3.jpg" alt="Дизайн" width="370" />
+              <div class="about-us-box">
+                <p class="about-us-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -176,7 +173,7 @@
                     </a>
                   </li>
                   <li class="social-item">
-                    
+                    <a href="" class="social-link link">
                       <svg class="social-icon" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
@@ -446,14 +443,14 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button type="button" data-modal-close class="modal-btn">
-                    <svg class="modal-close">
-                        <use href="./images/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-btn button">
+          <svg class="modal-close" width="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

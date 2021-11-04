@@ -52,7 +52,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-link::after {
+
+.main-link {
+  position: relative;
+}
+
+.main-link.current::after {
   content: "";
   display: block;
   width: 100%;
@@ -61,6 +66,7 @@ body {
   position: absolute;
   bottom: -1px;
   background-color: var(--accent-color);
+  bottom: -12px;
 }
 
 /* -------------------header-------------------------- */
@@ -650,6 +656,10 @@ img {
   transform: translateY(-100%);
 }
 
+.service-box-text {
+  overflow-y: scroll;
+}
+
 .help-card-list {
   display: flex;
   flex-wrap: wrap;
@@ -737,7 +747,7 @@ img {
   height: 581px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  transform: translate(-50%, -50%) scale(1);
   background-color: white;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
@@ -757,21 +767,18 @@ img {
 
 .modal-btn {
   display: flex;
+  display: block;
   justify-items: center;
   align-items: center;
   width: 30px;
   height: 30px;
+
   position: absolute;
   top: 8px;
   right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: inherit;
-}
-
-.modal-close {
-  width: 18px;
-  height: 18px;
 }
 
 .is-hidden {
