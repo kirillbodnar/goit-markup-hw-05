@@ -722,6 +722,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .footer-items {
